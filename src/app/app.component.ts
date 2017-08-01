@@ -1,23 +1,10 @@
-import { Component, OnInit } from '@angular/core';
-import { Weather } from './widget/weather';
-import { WeatherService } from './widget/weather.service';
+import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
-  providers: [WeatherService]
+    selector: 'app-root',
+    templateUrl: './app.component.html',
+    styleUrls: ['./app.component.css'],
 })
-export class AppComponent implements OnInit {
-  constructor(private weatherService: WeatherService) {  }
-  title = 'WeatherApp';
-  widgets: Weather[];
-
-  getWeather(): void {
-    this.weatherService.getWeather().then(weathers => this.widgets = weathers);
-  }
-
-  ngOnInit(): void {
-    this.getWeather();
-  }
+export class AppComponent {
+    title = 'Weather App';
 }

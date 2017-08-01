@@ -11,4 +11,8 @@ export const WIDGETS: Weather[] = [{
   city: 'Marseille',
   country: 'France',
   temp: '30°C'
+  }, {
+    city: 'Paris',
+    country: 'France',
+    temp: '25°C'
   }];
