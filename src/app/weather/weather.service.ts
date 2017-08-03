@@ -13,6 +13,7 @@ export class WeatherService {
     constructor(private http: Http) {  this.widgets = [];  }
 
     getWeather(): Weather[] {
+        console.log(this.widgets);
         return this.widgets;
     }
 
@@ -29,8 +30,8 @@ export class WeatherService {
                     res.json()['name'],
                     res.json()['sys']['country'],
                     res.json()['main']['temp'],
-                    res.json()['weather']['id'],
-                    res.json()['weather']['description']);
+                    res.json()['weather'][0]['id'],
+                    res.json()['weather'][0]['description']);
                 this.widgets.push(w);
                 /* return w; */
             })

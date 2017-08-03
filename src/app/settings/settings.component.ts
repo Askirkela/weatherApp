@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 
 import { WeatherService } from '../weather/weather.service';
+import { Weather } from '../weather/weather';
 
 @Component({
     selector: 'app-settings',
@@ -9,7 +10,8 @@ import { WeatherService } from '../weather/weather.service';
     providers: []
 })
 export class SettingsComponent {
-    constructor(private weatherService: WeatherService) {  }
+    weathers: Weather[];
+    constructor(private weatherService: WeatherService) { this.weathers = []; }
 
     add(city: string): void {
         this.weatherService.create(city);

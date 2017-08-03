@@ -1,4 +1,4 @@
-<div class="well col-md-4 col-sm-6 col-lg-3 col-xs-12">
+<div class="well">
     <p class="text-center"><strong>{{ weather.name }}, {{ weather.country | uppercase }}</strong></p>
     <span [class]="weather.weatherIcon">{{ weather.temp }}°C</span>
     <a class="text-right btn btn-xs btn-danger" (click)="delete(weather); $event.stopPropagation()">X</a>
