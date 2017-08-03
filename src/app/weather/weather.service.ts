@@ -1,14 +1,15 @@
 import { Injectable } from '@angular/core';
 import { Headers, Http } from '@angular/http';
 import { Weather } from './weather';
+import { environment } from '../../environments/environment';
 
 import 'rxjs/add/operator/toPromise';
 
 @Injectable()
 export class WeatherService {
-    private url = 'https://api.openweathermap.org/data/2.5/weather?q=';
-    private apiKeyString = '&APPID=dc393667966650c4415b7190103fcc7d';
-    private metricString = '&units=metric';
+    private url = environment['apiUrl']; // 'https://api.openweathermap.org/data/2.5/weather?q=';
+    private apiKeyString = environment['apiKeyString']; // '&APPID=dc393667966650c4415b7190103fcc7d';
+    private metricString = environment['metricString']; // &units=metric';
     public widgets: Weather[];
     constructor(private http: Http) {  this.widgets = [];  }
 

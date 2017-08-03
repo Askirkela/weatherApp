@@ -4,5 +4,11 @@
 // The list of which env maps to which file can be found in `.angular-cli.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  title: 'Weather App',
+  footer: 'Created by Luc Debène (2017)',
+  apiUrl: 'https://api.openweathermap.org/data/2.5/weather?q=',
+  apiKeyString: '&APPID=dc393667966650c4415b7190103fcc7d',
+  metricString: '&units=metric',
+  settings: 'Settings'
 };
