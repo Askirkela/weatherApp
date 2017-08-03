@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
     title = 'Weather App';
+    footerText = 'Created by Luc Debène (2017)';
 }

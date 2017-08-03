@@ -1,0 +1,15 @@
+.weather {
+    border: 1px solid black;
+    border-radius: 20px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+}
+
+a.btn-danger {
+    float: right;
+    margin-bottom: 10px;
+}
+
+.text-center {
+    margin-top: 15px;
+}

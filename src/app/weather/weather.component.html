@@ -1,5 +1,7 @@
-<div class="grid grid-pad">
-    <div class="col-1-4" *ngFor="let widget of widgets">
-        <app-widget [weather]="widget"></app-widget>
-    </div>
+<div class="">
+    <ul class="list-inline">
+        <li class="container" *ngFor="let widget of widgets">
+            <app-widget [weather]="widget"></app-widget>
+        </li>
+    </ul>
 </div>
