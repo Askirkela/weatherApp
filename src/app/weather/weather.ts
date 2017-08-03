@@ -3,7 +3,7 @@ export class Weather {
         this.name = name;
         this.country = country;
         this.temp = Math.round(parseFloat(temp));
-        this.weatherIcon = 'wi-owm-' + wId;
+        this.weatherIcon = 'wi wi-owm-' + wId;
         this.weatherDesc = wDesc;
     }
     name: string;
