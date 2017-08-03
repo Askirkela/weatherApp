@@ -6,7 +6,7 @@ import 'rxjs/add/operator/toPromise';
 
 @Injectable()
 export class WeatherService {
-    private url = 'http://api.openweathermap.org/data/2.5/weather?q=';
+    private url = 'https://api.openweathermap.org/data/2.5/weather?q=';
     private apiKeyString = '&APPID=dc393667966650c4415b7190103fcc7d';
     private metricString = '&units=metric';
     public widgets: Weather[];
