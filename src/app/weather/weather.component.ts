@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Weather } from './weather';
 import { WeatherService } from './weather.service';
+import { environment } from '../../environments/environment';
 
 @Component({
   selector: 'app-weather',
@@ -9,7 +10,7 @@ import { WeatherService } from './weather.service';
   providers: []
 })
 export class WeatherComponent implements OnInit {
-  title = 'WeatherApp';
+  welcome = environment['welcome'];
   widgets: Weather[];
   constructor(private weatherService: WeatherService) {  }
 

@@ -1,5 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 
+@import 'weather-icons.min.css';
 body {
     padding-top: 70px;
     padding-bottom: 70px;
